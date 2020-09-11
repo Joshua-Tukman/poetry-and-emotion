@@ -1,0 +1,20 @@
+
+<h1><%= @poems.count %> Poems Matching Your Search Criteria</h1>
+<ol>
+<%= @poems.each do |poem| %>
+  <section class="poem">
+    <section class="title">
+      <%= poem.title %>
+    </section>>
+    <section class="author">
+      <%= poem.author %>
+    </section>>
+    <section class="text">
+      <%= poem.text %>
+    </section>>
+    <section class="tone">
+      <%= poem.tone %>
+    </section>>
+  </section>>
+<% end %>
+</ol>
